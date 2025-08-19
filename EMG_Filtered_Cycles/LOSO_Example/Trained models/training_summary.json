@@ -1,0 +1,43 @@
+{
+  "training_data_path": "G:\\Research\\Github_dataset\\EMG_Filtered_Cycles\\LOSO_Example\\Train_s1-S6",
+  "input_shape": [
+    2,
+    59,
+    46
+  ],
+  "stft_config": {
+    "fs": 2000.0,
+    "nperseg": 400,
+    "noverlap": 200,
+    "freq_range": [
+      10,
+      300
+    ],
+    "log_transform": true
+  },
+  "standardization_params": {
+    "mean": -2.851144313812256,
+    "std": 0.5877326726913452
+  },
+  "total_training_samples": 691,
+  "models_trained": [
+    "cnn",
+    "adaptive_resnet"
+  ],
+  "model_performance": {
+    "cnn": {
+      "final_val_r2": 0.20431961623376804,
+      "final_val_rmse": 0.2551625317715673,
+      "epochs_trained": 163,
+      "total_params": 675297,
+      "early_stopped": true
+    },
+    "adaptive_resnet": {
+      "final_val_r2": 0.09808758575463505,
+      "final_val_rmse": 0.26985655149198606,
+      "epochs_trained": 78,
+      "total_params": 74705,
+      "early_stopped": true
+    }
+  }
+}

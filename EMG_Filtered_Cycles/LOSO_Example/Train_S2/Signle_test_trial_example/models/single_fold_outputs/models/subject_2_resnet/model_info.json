@@ -1,0 +1,41 @@
+{
+  "model_name": "resnet",
+  "subject_id": 2,
+  "input_shape": [
+    2,
+    49,
+    91
+  ],
+  "total_params": 75457,
+  "model_config": {
+    "enabled": true,
+    "epochs": 200,
+    "learning_rate": 0.0005,
+    "batch_size": 16,
+    "model_params": {
+      "blocks": [
+        1,
+        1
+      ],
+      "filters": [
+        32,
+        64
+      ],
+      "dropout": 0.3,
+      "use_se": true
+    }
+  },
+  "training_results": {
+    "final_r2": 0.37052297592163086,
+    "final_rmse": 24.690848516976512,
+    "final_mae": 21.11031723022461,
+    "epochs_trained": 200,
+    "early_stopped": false
+  },
+  "timestamp": "2025-08-12T20:16:08.368514",
+  "pytorch_version": "2.5.1",
+  "model_paths": {
+    "weights": "G:\\Research\\Github_dataset\\EMG_Filtered_Cycles\\LOSO_Example\\Train_S2\\Signle_test_trial_example\\models\\single_fold_outputs\\models\\subject_2_resnet\\model_weights.pth",
+    "full_model": "G:\\Research\\Github_dataset\\EMG_Filtered_Cycles\\LOSO_Example\\Train_S2\\Signle_test_trial_example\\models\\single_fold_outputs\\models\\subject_2_resnet\\full_model.pth"
+  }
+}

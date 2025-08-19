@@ -1,0 +1,37 @@
+{
+  "model_name": "cnn",
+  "subject_id": 2,
+  "input_shape": [
+    2,
+    49,
+    91
+  ],
+  "total_params": 1183201,
+  "model_config": {
+    "enabled": true,
+    "epochs": 200,
+    "learning_rate": 0.003,
+    "batch_size": 16,
+    "model_params": {
+      "filters": [
+        32,
+        64,
+        128
+      ],
+      "dropout": 0.3
+    }
+  },
+  "training_results": {
+    "final_r2": 0.494953989982605,
+    "final_rmse": 22.116253347015515,
+    "final_mae": 15.75460147857666,
+    "epochs_trained": 172,
+    "early_stopped": true
+  },
+  "timestamp": "2025-08-12T20:16:01.951862",
+  "pytorch_version": "2.5.1",
+  "model_paths": {
+    "weights": "G:\\Research\\Github_dataset\\EMG_Filtered_Cycles\\LOSO_Example\\Train_S2\\Signle_test_trial_example\\models\\single_fold_outputs\\models\\subject_2_cnn\\model_weights.pth",
+    "full_model": "G:\\Research\\Github_dataset\\EMG_Filtered_Cycles\\LOSO_Example\\Train_S2\\Signle_test_trial_example\\models\\single_fold_outputs\\models\\subject_2_cnn\\full_model.pth"
+  }
+}

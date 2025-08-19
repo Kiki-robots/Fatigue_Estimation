@@ -1,0 +1,43 @@
+{
+  "training_data_path": "G:\\Research\\Github_dataset\\EMG_Filtered_Cycles\\Training_sample set\\Train",
+  "input_shape": [
+    2,
+    59,
+    46
+  ],
+  "stft_config": {
+    "fs": 2000.0,
+    "nperseg": 400,
+    "noverlap": 200,
+    "freq_range": [
+      10,
+      300
+    ],
+    "log_transform": true
+  },
+  "standardization_params": {
+    "mean": -2.743786334991455,
+    "std": 0.5432164669036865
+  },
+  "total_training_samples": 131,
+  "models_trained": [
+    "cnn",
+    "adaptive_resnet"
+  ],
+  "model_performance": {
+    "cnn": {
+      "final_val_r2": 0.6326166654439773,
+      "final_val_rmse": 17.696700759560734,
+      "epochs_trained": 133,
+      "total_params": 675297,
+      "early_stopped": true
+    },
+    "adaptive_resnet": {
+      "final_val_r2": 0.37511257115120844,
+      "final_val_rmse": 21.833285770898318,
+      "epochs_trained": 71,
+      "total_params": 74705,
+      "early_stopped": true
+    }
+  }
+}

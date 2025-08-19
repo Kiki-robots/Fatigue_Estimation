@@ -1,0 +1,10 @@
+{
+  "fs": 2000.0,
+  "nperseg": 400,
+  "noverlap": 200,
+  "freq_range": [
+    10,
+    300
+  ],
+  "log_transform": true
+}

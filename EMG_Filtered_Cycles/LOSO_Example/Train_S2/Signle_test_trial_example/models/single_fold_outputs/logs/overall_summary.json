@@ -1,0 +1,47 @@
+{
+  "n_subjects": 1,
+  "n_total_models_trained": 3,
+  "subject_summaries": {
+    "2": {
+      "n_models_trained": 3,
+      "best_model": "cnn",
+      "best_r2": 0.494953989982605,
+      "best_rmse": 22.116253347015515
+    }
+  },
+  "model_performance": {
+    "adaptive_resnet": {
+      "n_subjects": 1,
+      "mean_r2": -0.2296847105026245,
+      "std_r2": 0.0,
+      "best_r2": -0.2296847105026245,
+      "mean_rmse": 34.509842063080356,
+      "std_rmse": 0.0,
+      "best_rmse": 34.509842063080356
+    },
+    "resnet": {
+      "n_subjects": 1,
+      "mean_r2": 0.37052297592163086,
+      "std_r2": 0.0,
+      "best_r2": 0.37052297592163086,
+      "mean_rmse": 24.690848516976512,
+      "std_rmse": 0.0,
+      "best_rmse": 24.690848516976512
+    },
+    "cnn": {
+      "n_subjects": 1,
+      "mean_r2": 0.494953989982605,
+      "std_r2": 0.0,
+      "best_r2": 0.494953989982605,
+      "mean_rmse": 22.116253347015515,
+      "std_rmse": 0.0,
+      "best_rmse": 22.116253347015515
+    }
+  },
+  "overall_best": {
+    "model": "cnn",
+    "r2": 0.494953989982605,
+    "subject": 2
+  },
+  "timestamp": "2025-08-12T20:16:12.155997"
+}
